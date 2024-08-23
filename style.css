@@ -1,0 +1,102 @@
+/* Estilo global para o body */
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    z-index: 1000; /* Garante que o header fique sobre os outros elementos */
+}
+
+/* Estilo para o menu de navegação */
+nav {
+    margin: 60px 20px; /* Margem superior e inferior para evitar sobreposição */
+    padding-top: 60px;
+    padding-bottom: 60px; /* Compensação para o footer */
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000; /* Garante que o footer fique sobre os outros elementos */
+}
+
+/* Estilo para o botão de retorno */
+.back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background-color: #4CAF50;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
