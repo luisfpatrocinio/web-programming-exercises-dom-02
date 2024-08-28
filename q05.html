@@ -1,0 +1,36 @@
+<!-- Crie  um  outro  exemplo  de  carregamento  de  imagens  em  que  o  endereço  de  3 
+imagens estejam em elementos de um select previamente configurado. Ao mudar 
+o  conteúdo  do  componente,  a  imagem  específica  deve  ser  carregada  usando  um 
+evento chamado on change. 
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event -->
+
+<DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Questão 05</title>
+      <!-- Carregar CSS -->
+      <link rel="stylesheet" href="q05.css" />
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <h1>Carregamento de Imagens em Lista</h1>
+      <form>
+        <div class="imageForm">
+          <label for="selectImageList">Selecione a imagem:</label>
+          <br />
+          <select id="selectImageList">
+            <option value="mariobros.jpg">Mario</option>
+            <option value="pokemon.jpg">Pokemon</option>
+            <option value="zelda.jpg">Zelda</option>
+          </select>
+          <div id="result"></div>
+        </div>
+      </form>
+    </body>
+    <footer>
+      <a href="index.html" class="back-button">Voltar ao Menu</a>
+    </footer>
+    <script src="q05.js"></script>
+  </html>
+</DOCTYPE>

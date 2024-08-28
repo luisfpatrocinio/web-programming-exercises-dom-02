@@ -1,0 +1,38 @@
+<!-- 4) Crie uma página web que permita aos usuários carregarem uma imagem utilizando 
+um componente de upload de arquivo. A página deve conter os seguintes 
+elementos: 
+a) Um  componente  de  upload  de  arquivo  (input  type="file")  onde  o  usuário 
+pode selecionar a imagem. 
+<input type="file" id="uploadImagem" accept="image/*"> 
+b) Uma div com o id "resultado" onde a imagem será exibida. 
+c) Um botão que, ao ser clicado, carrega a imagem. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 04</title>
+    <!-- Carregar CSS -->
+    <link rel="stylesheet" href="q04.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="uploadForm">
+      <h1>Envio de Imagens</h1>
+      <form>
+        <div class="uploadForm">
+          <label for="uploadImage">Selecione a imagem:</label>
+          <br />
+          <input type="file" id="uploadImage" accept="image/*" />
+          <button id="submitButton" type="button">Carregar Imagem</button>
+        </div>
+      </form>
+      <div id="result"></div>
+    </div>
+  </body>
+  <footer>
+    <a href="index.html" class="back-button">Voltar ao Menu</a>
+  </footer>
+  <script src="q04.js"></script>
+</html>
